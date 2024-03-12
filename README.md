@@ -3,6 +3,7 @@ This project is for basic understanding of CRUD operations without an actual DB 
 I used Java 8 features to do the CRUD operations in this project.
 
 <h3>Prerequisites </h3>
+
 How I declared items in inventory by default?
 * I pre-defined 3 items already in Static Block for a static variable
 * Used Static because of the memory utilization, it will share the variable instead of creating new object everytime.
@@ -21,34 +22,40 @@ How I added default contextPath of <i>"/inventoryservice/v1"</i>?
   * <i>server.servlet.context-path = /inventoryservice/v1</i>
 
 <h3>POST / CREATE</h3>
+
 * Created POST http method to add/save an item in the Inventory.
 * In SET predefined <i>add()</i> method returns boolean using that created if else statements.
     * True: returns the saved object.
     * False: returns the empty Inventory object.
 
 <h3>GET / RETRIEVE</h3>
+
 * Created GET http method to retrieve all the items in the Inventory.
 * Because of the Static block and variable, by default I have 3 items in Inventory to return.
 * It will return all the items in the Inventory.
 
 <h3>PUT / UPDATE</h3>
+
 * Created PUT http method to update an item in the inventory.
 * Used the pathVariable to pass an itemId to fetch and update the item in inventory.
 * Used Java 8 stream feature for the inventorySet, added filter operation to get the item to be updated and used map method to that item to update the item in inventory.
 * Used <i>findFirst()</i> to get the element from Stream and used <i>get()</i> method to return as Inventory object instead of <i>Optional<Inventory\></i>.
 
 <h3>DELETE</h3>
+
 * Created DELETE http method to delete an item in the inventory.
 * Used the requestParam to get an itemId to delete that respective item in the inventory.
 * Used same process of Java 8 in PUT operation to get a unique item from the inventory and stored in a variable.
 * Passed that variable in pre-defined <i>remove()</i> method of SET to delete/remove an item from the inventory.
 
 <h3>DELETE ALL</h3>
+
 * Created DELETE http method to delete all the items in the inventory.
 * Which will empty the inventorySet.
 * invoked the pre-defined <i>removeAll()</i> method of SET and passed the inventorySet as argument to empty the inventorySet.
 
 <h3>LOGGING</h3>
+
 * Used SLF4j for logging.
 * In controller file used traditional way by importing SLF4j package and used the logger.
 * In serviceImpl file used lombok <i>@Slf4j</i> annotation to do the logging, default variable is <i>log</i>.
