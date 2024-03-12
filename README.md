@@ -47,3 +47,13 @@ How I added default contextPath of <i>"/inventoryservice/v1"</i>?
 * Created DELETE http method to delete all the items in the inventory.
 * Which will empty the inventorySet.
 * invoked the pre-defined <i>removeAll()</i> method of SET and passed the inventorySet as argument to empty the inventorySet.
+
+<h3>LOGGING</h3>
+* Used SLF4j for logging.
+* In controller file used traditional way by importing SLF4j package and used the logger.
+* In serviceImpl file used lombok <i>@Slf4j</i> annotation to do the logging, default variable is <i>log</i>.
+* In application.properties file added some properties related to the logging like pattern, rollover policy, filename, etc.
+* For log file reference check <i>"src/main/java/resources/logs/inventoryService.log"</i> file.
+* For more details on the logging using xml configuration and application.properties, also for pattern details check the links below,
+  * <a href="https://www.codejava.net/frameworks/spring-boot/logback-rolling-files-example#:~:text=Basically%2C%20you%20just%20need%20to%20specify%20the%20following,enable%20daily%20rolling%20files%20logging%3A%20logging.file.name%3DMyApp.log%20logging.pattern.rolling-file-name%3DMyApp-%25d%20%7Byyyy-MM-dd%7D.%25i.log"> code Java for application.properties logging </a>
+  * <a href="https://dzone.com/articles/configuring-logback-with-spring-boot"> Dzone for xml configuration logging and pattern details </a>

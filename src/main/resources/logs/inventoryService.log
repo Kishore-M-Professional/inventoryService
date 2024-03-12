@@ -1,0 +1,56 @@
+12-03-2024 11:22:35.278 [restartedMain] INFO [c.e.i.InventoryServiceApplication] - Starting InventoryServiceApplication using Java 16.0.1 on BRIAPWL79xKAqGZ with PID 25140 (C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService\target\classes started by KISHORE.M in C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService)
+12-03-2024 11:22:35.278 [restartedMain] DEBUG [c.e.i.InventoryServiceApplication] - Running with Spring Boot v2.6.1, Spring v5.3.13
+12-03-2024 11:22:35.282 [restartedMain] INFO [c.e.i.InventoryServiceApplication] - No active profile set, falling back to default profiles: default
+12-03-2024 11:22:37.878 [restartedMain] INFO [c.e.i.service.InventoryServiceImpl] - 3 Items added in the Inventory
+12-03-2024 11:22:37.878 [restartedMain] TRACE [c.e.i.service.InventoryServiceImpl] - Log level: TRACE
+12-03-2024 11:22:37.878 [restartedMain] INFO [c.e.i.service.InventoryServiceImpl] - Log level: INFO
+12-03-2024 11:22:37.878 [restartedMain] DEBUG [c.e.i.service.InventoryServiceImpl] - Log level: DEBUG
+12-03-2024 11:22:37.878 [restartedMain] ERROR [c.e.i.service.InventoryServiceImpl] - Log level: ERROR
+12-03-2024 11:22:37.878 [restartedMain] WARN [c.e.i.service.InventoryServiceImpl] - Log level: WARN
+12-03-2024 11:22:38.762 [restartedMain] INFO [c.e.i.InventoryServiceApplication] - Started InventoryServiceApplication in 4.141 seconds (JVM running for 4.884)
+12-03-2024 11:22:40.356 [http-nio-8080-exec-2] INFO [c.e.i.controller.InventoryController] - invoking '/all' endpoint
+12-03-2024 17:18:59.313 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Starting InventoryServiceApplication using Java 16.0.1 on BRIAPWL79xKAqGZ with PID 1672 (C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService\target\classes started by KISHORE.M in C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService)
+12-03-2024 17:18:59.313 --- [restartedMain] --- DEBUG [c.e.i.InventoryServiceApplication] - Running with Spring Boot v2.6.1, Spring v5.3.13
+12-03-2024 17:18:59.313 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - No active profile set, falling back to default profiles: default
+12-03-2024 17:19:03.197 --- [restartedMain] --- INFO [c.e.i.service.InventoryServiceImpl] - 3 Items added in the Inventory
+12-03-2024 17:19:03.200 --- [restartedMain] --- TRACE [c.e.i.service.InventoryServiceImpl] - Log level: TRACE
+12-03-2024 17:19:03.200 --- [restartedMain] --- INFO [c.e.i.service.InventoryServiceImpl] - Log level: INFO
+12-03-2024 17:19:03.200 --- [restartedMain] --- DEBUG [c.e.i.service.InventoryServiceImpl] - Log level: DEBUG
+12-03-2024 17:19:03.200 --- [restartedMain] --- ERROR [c.e.i.service.InventoryServiceImpl] - Log level: ERROR
+12-03-2024 17:19:03.200 --- [restartedMain] --- WARN [c.e.i.service.InventoryServiceImpl] - Log level: WARN
+12-03-2024 17:19:04.293 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Started InventoryServiceApplication in 5.971 seconds (JVM running for 7.153)
+12-03-2024 17:19:12.129 --- [http-nio-8080-exec-1] --- INFO [c.e.i.controller.InventoryController] - invoking '/all' endpoint
+12-03-2024 17:32:08.898 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Starting InventoryServiceApplication using Java 16.0.1 on BRIAPWL79xKAqGZ with PID 11712 (C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService\target\classes started by KISHORE.M in C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService)
+12-03-2024 17:32:08.906 --- [restartedMain] --- DEBUG [c.e.i.InventoryServiceApplication] - Running with Spring Boot v2.6.1, Spring v5.3.13
+12-03-2024 17:32:08.906 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - No active profile set, falling back to default profiles: default
+12-03-2024 17:32:12.428 --- [restartedMain] --- INFO [c.e.i.service.InventoryServiceImpl] - 3 Items added in the Inventory
+12-03-2024 17:32:13.712 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Started InventoryServiceApplication in 5.65 seconds (JVM running for 6.596)
+12-03-2024 17:32:33.370 --- [http-nio-8080-exec-1] --- INFO [c.e.i.controller.InventoryController] - invoking '/all' endpoint
+12-03-2024 17:32:33.371 --- [http-nio-8080-exec-1] --- INFO [c.e.i.service.InventoryServiceImpl] - Returning inventory items
+12-03-2024 17:32:45.343 --- [http-nio-8080-exec-3] --- INFO [c.e.i.controller.InventoryController] - invoking '/add' endpoint
+12-03-2024 17:32:45.343 --- [http-nio-8080-exec-3] --- INFO [c.e.i.service.InventoryServiceImpl] - New item of ID vivoneo added to the inventory!!!
+12-03-2024 17:32:57.246 --- [http-nio-8080-exec-4] --- INFO [c.e.i.controller.InventoryController] - invoking '/update' endpoint for ID:iphone12
+12-03-2024 17:32:57.247 --- [http-nio-8080-exec-4] --- INFO [c.e.i.service.InventoryServiceImpl] - Updating the item of ID iphone12
+12-03-2024 17:32:57.247 --- [http-nio-8080-exec-4] --- INFO [c.e.i.service.InventoryServiceImpl] - Item has been updated - Inventory(itemId=iphone12, itemName=Iphone 12, itemPrice=65000, quantity=60)
+12-03-2024 17:33:21.292 --- [http-nio-8080-exec-5] --- INFO [c.e.i.controller.InventoryController] - invoking '/delete' endpoint for ID:vivoneo
+12-03-2024 17:33:21.293 --- [http-nio-8080-exec-5] --- INFO [c.e.i.service.InventoryServiceImpl] - ID-'{}' of item deleted
+12-03-2024 17:33:57.730 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Starting InventoryServiceApplication using Java 16.0.1 on BRIAPWL79xKAqGZ with PID 5608 (C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService\target\classes started by KISHORE.M in C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService)
+12-03-2024 17:33:57.732 --- [restartedMain] --- DEBUG [c.e.i.InventoryServiceApplication] - Running with Spring Boot v2.6.1, Spring v5.3.13
+12-03-2024 17:33:57.732 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - No active profile set, falling back to default profiles: default
+12-03-2024 17:34:02.318 --- [restartedMain] --- INFO [c.e.i.service.InventoryServiceImpl] - 3 Items added in the Inventory
+12-03-2024 17:34:03.879 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Started InventoryServiceApplication in 7.114 seconds (JVM running for 8.016)
+12-03-2024 17:34:05.886 --- [http-nio-8080-exec-2] --- INFO [c.e.i.controller.InventoryController] - invoking '/add' endpoint
+12-03-2024 17:34:05.889 --- [http-nio-8080-exec-2] --- INFO [c.e.i.service.InventoryServiceImpl] - New item of ID vivoneo added to the inventory!!!
+12-03-2024 17:34:09.535 --- [http-nio-8080-exec-3] --- INFO [c.e.i.controller.InventoryController] - invoking '/delete' endpoint for ID:vivoneo
+12-03-2024 17:34:09.541 --- [http-nio-8080-exec-3] --- INFO [c.e.i.service.InventoryServiceImpl] - ID-'{}' of item deleted
+12-03-2024 17:35:06.503 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Starting InventoryServiceApplication using Java 16.0.1 on BRIAPWL79xKAqGZ with PID 13124 (C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService\target\classes started by KISHORE.M in C:\Users\KISHORE.M\OneDrive - Brillio\Documents\Sample Projects\inventoryService)
+12-03-2024 17:35:06.504 --- [restartedMain] --- DEBUG [c.e.i.InventoryServiceApplication] - Running with Spring Boot v2.6.1, Spring v5.3.13
+12-03-2024 17:35:06.505 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - No active profile set, falling back to default profiles: default
+12-03-2024 17:35:10.743 --- [restartedMain] --- INFO [c.e.i.service.InventoryServiceImpl] - 3 Items added in the Inventory
+12-03-2024 17:35:11.868 --- [restartedMain] --- INFO [c.e.i.InventoryServiceApplication] - Started InventoryServiceApplication in 6.474 seconds (JVM running for 7.918)
+12-03-2024 17:35:34.521 --- [http-nio-8080-exec-2] --- INFO [c.e.i.controller.InventoryController] - invoking '/add' endpoint
+12-03-2024 17:35:34.522 --- [http-nio-8080-exec-2] --- INFO [c.e.i.service.InventoryServiceImpl] - New item of ID vivoneo added to the inventory!!!
+12-03-2024 17:35:36.741 --- [http-nio-8080-exec-3] --- INFO [c.e.i.controller.InventoryController] - invoking '/delete' endpoint for ID:vivoneo
+12-03-2024 17:35:36.744 --- [http-nio-8080-exec-3] --- INFO [c.e.i.service.InventoryServiceImpl] - ID 'vivoneo' of item deleted
+12-03-2024 17:35:53.531 --- [http-nio-8080-exec-4] --- INFO [c.e.i.controller.InventoryController] - invoking '/delete/all' endpoint
+12-03-2024 17:35:53.532 --- [http-nio-8080-exec-4] --- INFO [c.e.i.service.InventoryServiceImpl] - Inventory items deleted
