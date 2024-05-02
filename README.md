@@ -21,6 +21,12 @@ How I added default contextPath of <i>"/inventoryservice/v1"</i>?
 * I added a property in application.properties file to achieve this.
   * <i>server.servlet.context-path = /inventoryservice/v1</i>
 
+What is CrossOrigin Error and how to resolve it?
+* When you try to access the endpoints declared in controller from another domain, CrossOrigin policy error will occur.
+  * Eg: your Backend application runs in <i>http://localhost:8080 </i> but you try to invoke the endpoint from UI which runs in another domain <i>http://localhost:3000 </i> which causes domain mismatch and CrossOrigin error occurs.
+* To resolve this error you have to add annotation in the controller class <i>@CrossOrigin </i> or you can write your own CorsConfig or CrossOriginConfig to resolve this error.
+  * Check the CorsConfig class for own config <i> "src/main/java/com/example/inventory/config/CorsConfig.java" </i>
+
 <h3>POST / CREATE</h3>
 
 * Created POST http method to add/save an item in the Inventory.
@@ -30,9 +36,13 @@ How I added default contextPath of <i>"/inventoryservice/v1"</i>?
 
 <h3>GET / RETRIEVE</h3>
 
-* Created GET http method to retrieve all the items in the Inventory.
-* Because of the Static block and variable, by default I have 3 items in Inventory to return.
-* It will return all the items in the Inventory.
+* "/all"
+  * Created GET http method to retrieve all the items in the Inventory.
+  * Because of the Static block and variable, by default I have 3 items in Inventory to return.
+  * It will return all the items in the Inventory.
+  
+* "/get/{id}"
+  * Created GET http method to retrieve one item from Inventory by passing ID.
 
 <h3>PUT / UPDATE</h3>
 

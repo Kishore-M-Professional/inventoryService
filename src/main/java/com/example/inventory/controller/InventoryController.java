@@ -5,6 +5,8 @@ import com.example.inventory.service.InventoryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,7 +31,7 @@ public class InventoryController {
     @Autowired
     InventoryService inventoryService;
 
-    @GetMapping("/all")
+    @GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Set<Inventory>> getAll(){
         LOGGER.info("invoking '/all' endpoint");
         return ResponseEntity.ok(inventoryService.getAllItems());
@@ -38,7 +40,11 @@ public class InventoryController {
     @PostMapping("/add")
     public ResponseEntity<Inventory> addInventory(@RequestBody Inventory newItem){
         LOGGER.info("invoking '/add' endpoint");
-        return ResponseEntity.ok(inventoryService.addItem(newItem));
+        Inventory resp = inventoryService.addItem(newItem);
+        if(resp.getItemId().isBlank()){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp);
+        }
+        return ResponseEntity.ok(resp);
     }
 
     /*
@@ -66,4 +72,11 @@ public class InventoryController {
         LOGGER.info("invoking '/delete/all' endpoint");
         return ResponseEntity.ok(inventoryService.deleteAllItems());
     }
+
+    @GetMapping("/get/{id}")
+    public ResponseEntity<Inventory> getItem(@PathVariable String id){
+        LOGGER.info("invoking '/get/{}' endpoint",id);
+        return ResponseEntity.ok(inventoryService.getItem(id));
+    }
+
 }

@@ -79,6 +79,12 @@ public class InventoryServiceImpl implements InventoryService{
         return "Items in the inventory cannot be deleted!!!";
     }
 
+    @Override
+    public Inventory getItem(String id) {
+        log.info("Getting Item for ID: {}",id);
+        return inventorySet.stream().filter(item -> item.getItemId().equals(id)).findFirst().get();
+    }
+
     private Inventory updateInventoryItem(Inventory item, Inventory updateItem) {
         item.setItemName(updateItem.getItemName());
         item.setItemPrice(updateItem.getItemPrice());
